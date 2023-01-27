@@ -1,0 +1,383 @@
+:root {
+  --background: #ffffff;
+  --on-background: #202124;
+  --text: #232323;
+  --border-header: #bbbbbb;
+  --border-carousel-caption: #19ad19;
+  --green: #19ad19;
+  --black: #151515;
+  --dark-black: #000000;
+  --drop-shadow: rgba(32, 33, 36, 0.3);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+iframe{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/*===================================*/
+/*              HEADER               */
+/*===================================*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 75px 0px 75px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-header);
+}
+
+header .navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+header .navigation ul li {
+  list-style: none;
+  margin: 0 !important;
+  margin-left: 10px !important;
+}
+
+header .navigation ul li a{
+  text-decoration: none;
+  color: var(--text);
+  padding-left: 8px;
+  font-weight: 500;
+}
+
+header .navigation ul li a:hover{
+  color: var(--green);
+  transition: 0.2s ease-in;
+}
+
+.header-name {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.header-name span{
+  color: var(--green);
+}
+
+/*===================================*/
+/*              FOOTER               */
+/*===================================*/
+
+footer {
+  color: #bdc5d3;
+  margin-top: auto;
+  width: 100%;
+  font-size: 15px;
+  background-color: var(--black);
+  /* position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  color: #929aaa;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  font-size: 15px; */
+}
+
+.appfooter-info {
+  padding: 40px 60px;
+  text-align: left;
+  background-color: var(--black);
+}
+
+.appfooter-info h3 {
+  margin-bottom: 20px;
+}
+
+.appfooter-info p{
+ margin-bottom: 5px;
+}
+
+.appfooter-copyright {
+  font-weight: 500;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--dark-black);
+}
+
+.appfooter-copyright p{
+  margin-bottom: 5px;
+}
+
+.appfooter-copyright p span{
+  font-weight: bolder;
+}
+
+.appfooter-copyright-designed span{
+  color: var(--green);
+}
+
+/*===================================*/
+/*           IMAGE SLIDER            */
+/*===================================*/
+
+.image-slider {
+  display: block;
+  text-align: center;
+}
+
+.image-slider img{
+  width: 100%;
+  max-height: 400px;
+}
+
+.carousel-caption{
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 15px 15px;
+  border-top: 7px solid var(--border-carousel-caption);
+}
+
+.carousel-item img {
+  height: 650px;
+}
+
+.carousel-control-next {
+  background-color: rgb(0, 0, 0, 1);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  top: 250px;
+  right: 30px;
+}
+
+.carousel-control-prev{
+  background-color: rgb(0, 0, 0, 1);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  top: 250px;
+  left: 30px;
+}
+
+/*===================================*/
+/*                HOME               */
+/*===================================*/
+
+.content-home{
+  margin-top: 75px;
+  padding: 0 100px;
+  margin-bottom: 150px;
+}
+
+.content-home-container-flex{
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.content-home-container-image{
+  width: 40%;
+  text-align: center;
+  padding: 5px;
+}
+
+.content-home-container-image img{
+  width: 60%;
+}
+
+.content-home-container-text{
+  width: 60%;
+}
+
+.content-home-visi{
+  margin: 20px 0;
+}
+
+.content-home-misi{
+  margin: 20px 0;
+}
+
+.content-home-misi ol {
+  margin-top: 5px;
+  padding-left: 17px;
+}
+
+.content-home-misi ol li{
+  margin-top: 5px;
+}
+
+/*===================================*/
+/*            APP SUPPORT            */
+/*===================================*/
+
+.appsupport {
+  margin: 90px 30px;
+}
+
+.appsupport h2{
+  padding: 10px 0;
+  margin: 0px 620px;
+  border-bottom: 4px solid var(--green);
+}
+
+.appsupport-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.appsupport-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  margin: 20px;
+}
+
+.appsupport-container div {
+  padding: 30px;
+  text-align: center;
+  border-left: 1px solid rgb(128, 128, 128, 0.2);
+  border-right: 1px solid rgb(128, 128, 128, 0.2);
+}
+
+.appsupport-container div img{
+  width: 40px;
+  margin: 20px;
+  filter: grayscale(1);
+}
+
+.appsupport-container div img:hover{
+  filter: none;
+  transition: 0.3s ease-in;
+}
+
+/*===================================*/
+/*             DROP DOWN             */
+/*===================================*/
+
+.dropdown-toggle{
+  background-color: var(--background);
+  color: var(--text);
+  font-weight: 500;
+  border: none;
+}
+
+.dropdown-toggle:hover{
+  background-color: var(--background);
+  color: var(--green);
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 5px 0;
+}
+
+/*===================================*/
+/*           CONTACT PAGE            */
+/*===================================*/
+
+.contactpage-information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px auto 100px auto;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0px 5px 10px 0 var(--drop-shadow);
+  border-radius: 10px;
+  font-size: 14px;
+  width: 1000px;
+}
+
+.contactpage-information-item {
+  display: flex;
+  margin: 10px 0;
+  padding: 20px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contactpage-information-item-icon {
+  color: var(--green);
+}
+
+.contactpage-information-item svg{
+  font-size: 30px;
+}
+
+.contactpage-information-item p {
+  margin: 0;
+}
+
+/*===================================*/
+/*            ABOUT PAGE             */
+/*===================================*/
+
+.aboutpage-information {
+  text-align: center;
+  margin: 50px 0 150px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.aboutpage-information h3{
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 20px auto;
+}
+
+.card-title{
+  font-size: 18px;
+}
+
+.structural-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+}
+
+/*===================================*/
+/*           POTENSI PAGE            */
+/*===================================*/
+
+.potensipage-information {
+  text-align: center;
+  margin: 150px;
+}
+
+/*===================================*/
+/*        PETA BENCANA PAGE          */
+/*===================================*/
+
+.petapotensipage-information {
+  text-align: center;
+  margin: 50px 0 150px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.petapotensipage-information h3{
+  margin-bottom: 20px;
+}
